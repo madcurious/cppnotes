@@ -259,21 +259,18 @@ int nums[] {5, -7, 1, 4, -3};
 int length = sizeof(nums) / sizeof(int);
 
 // regular for loop
-std::cout << "regular for: ";
 for (int i = 0; i < length; ++i) {
   std::cout << nums[i] << " ";
 }
 std::cout << "\n";
 
 // range-for
-std::cout << "range-for: ";
 for (int& i : nums) {
   std::cout << i << " ";
 }
 std::cout << "\n";
 
 // while loop
-std::cout << "while: ";
 int i = 0;
 while (i < length) {
   std::cout << nums[i] << " ";
@@ -282,16 +279,10 @@ while (i < length) {
 std::cout << "\n";
 
 // do-while
-std::cout << "do-while: ";
 i = 0;
 do {
   std::cout << nums[i] << " ";
   ++i;
 } while (i < length);
 std::cout << "\n";
-
-// regular for: 5 -7 1 4 -3 
-// range-for: 5 -7 1 4 -3 
-// while: 5 -7 1 4 -3 
-// do-while: 5 -7 1 4 -3 
 ```
